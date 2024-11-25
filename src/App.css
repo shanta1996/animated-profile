@@ -1,0 +1,61 @@
+/* #social{
+  animation: slideleft 20s linear infinite;
+}
+@keyframes slideleft{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+} */
+
+
+*::selection {
+  background-color: #fff;
+  color: #D4AF37;
+}
+body::-webkit-scrollbar {
+  /* background-color: #000; */
+  background-color: rgb(15 23 42);
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #D4AF37;
+  border-radius: 15px;
+  height: 10px;
+}
+body{
+  overflow-x: hidden;
+}
+*{
+  /* cursor: none; */
+}
+
+.profile{
+  background-image: url('/dolly.jpg');
+ background-size: cover;
+ background-position: center;
+ transition: 0.4s linear;
+}
+.profile:hover{
+ transform: rotate3d(-3,-1,0,30deg);
+}
+.profile:hover .hello{
+  opacity: 1;
+
+}
+
+/* project */
+.yellowcard{
+  transition: 0.4s linear;
+}
+.card:hover .yellowcard{
+display: block;
+
+align-items: center;
+justify-content: center;
+}
+.card:hover .back{
+display: none;
+}
